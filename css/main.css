@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    height: 100vh;
+    font-size: 14px;
+    font-family: 'hanken grotesk';
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+section {
+    max-width: 375px;
+    background-color: white;
+    
+}
+/* PURPLE CONTAINER */
+
+.purple-container {
+    background: linear-gradient(#7456f8, #3933f3); 
+    color: white;
+
+    border-bottom-left-radius: 12%;
+    border-bottom-right-radius: 12%;
+
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+#circle {
+    background: linear-gradient(#342df4, #5534ec);
+    border-radius: 50%;
+    height: 9em;
+    width: 9em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 8.7em;
+    margin-top: 1.5em;
+}
+
+#big-number {
+    font-size: 3.5em;
+    font-weight: 700;
+
+
+}
+
+#of-100 {
+    font-size: 0.3em;
+    color: #c6bcf99f;
+    display: block;
+    margin-left: 7px;
+}
+
+
+h2 {
+    color: #c6bcf9;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+h1 {
+    color: white;
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: 500;
+    margin: 1.2em 0.7em 0.4em 0; 
+}
+
+.score-text {
+    text-align: center;
+    font-size: 1.1em;
+    color: #c6bcf9;
+
+    margin: 0 0 1em 0;
+    padding: 0 4em 0 4em;
+}
+
+/* WHITE CONTAINER */
+
+
+h3 {
+    margin-left: 2.2em;
+}
+
+.f-tabs {
+    margin: 0 2.2em 0 2.2em;
+}
+.rmvv {
+    font-size: 1.1em;
+    font-weight: 800;
+    margin: 1.1em 0 0 0.6em;
+}
+/* REACTION container */
+.reaction {
+    background-color: #fff6f5;
+    border-radius: 0.8em;
+    display: flex;
+    margin-top: 2em;
+}
+
+.logo-img {
+    margin-left: 0.9em;
+}
+
+#reaction-title {
+    color: #dc4e5cb7;
+ 
+}
+
+.space {
+    margin-top: 1.3em;
+    margin-left: 10.5em;
+    font-weight: 700;
+}
+.grey-text {
+    color: #9894ae;
+    font-weight: 700;
+}
+/* End of REACTION container */
+
+
+                          /* MEMORY container */
+
+.memory {
+    background-color: #fefcef;
+    border-radius: 0.8em;
+    display: flex;
+    margin-top: 1.3em;
+}
+#memory-title {
+    color: #f6b935c4;
+
+}
+#memory-numbers {
+    margin-left: 10.7em;
+}
+                          /* VERBAL container */
+.verbal {
+    background-color: #f2fbfa;
+    border-radius: 0.8em;
+    display: flex;
+    margin-top: 1.3em;
+}
+#verbal-title {
+    color: #39c39cd8;
+}
+#verbal-numbers {
+    margin-left: 11.6em;
+}
+                          /* VISUAL container */
+.visual {
+     background-color: #f3f3fd;
+     border-radius: 0.8em;
+     display: flex;
+     margin-top: 1.3em;
+}
+#visual-title {
+     color: #3745ddc7;
+}
+#visual-numbers {
+    margin-left: 11.7em;
+}
+
+                          /* BUTTON */
+button {
+    background-color: #303b59;
+    border-radius: 2em;
+    color: white;
+    font-weight: 700;
+
+    margin: 2em 0 2.5em 0;
+    padding: 1em 9.5em 1em 9.5em;  
+}
+
+.button {
+    text-align: center;
+}
+
+
+
+/******************** DESKTOP 1440px ******************/
+
+@media (min-width: 1440px) {
+
+
+    section {
+        max-width: 640px;
+        height: 50%;
+        display: flex;
+        box-shadow: 0 5px 10px 0 rgba(27, 22, 179, 0.111), 0 2px 10px 0 rgba(28, 11, 215, 0.19);
+        border-radius: 5%;
+    }
+
+    .purple-container {
+        border-radius: 1.8em;
+        width: 50%;
+    }
+
+
+    #circle {
+        height: 10.5em;
+        width: 10.5em;
+    
+        margin-left: 25%;
+        margin-top: 10%;
+    }
+
+    #big-number {
+        font-size: 3.5em;
+    }
+    
+    #of-100 {
+        color: #c6bcf99f;
+    }
+    
+    
+    h2 {
+        color: #cfc8f7;
+
+    }
+    
+    h1 {
+        color: white;
+        font-size: 1.8em;
+        text-align: center;
+        font-weight: 500;
+        margin: 1.1em 0.2em 0.4em 0;
+    }
+    
+    .score-text {
+        text-align: center;
+        font-size: 1.1em;
+        color: #c6bcf9;
+    
+        margin: 0 0 0 0;
+        padding: 0.5em 3em 0 3em;
+    }
+
+/* Right side */
+
+h3 {
+    margin-top: 1.6em;
+    font-size: 1.3em;
+}
+#reaction-numbers,
+#memory-numbers {
+    margin-left: 6em;
+}
+
+
+#verbal-numbers,
+#visual-numbers {
+    margin-left: 7em;
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+    padding-right: 1em;
+    margin-top: 0.9em;
+}
+
+
+button {
+    margin: 2em 0 2.5em 0;
+    padding: 1em 7em 1em 7em;  
+}
+
+
+
+
+
+}
